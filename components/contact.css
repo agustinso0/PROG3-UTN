@@ -13,11 +13,18 @@
     margin-bottom: 60px;
     left: 50%;
 }
+.texto-secundario{
+    font-size: 30px;
+    margin-bottom: 60px;
+}
 .contact-left img{
     max-width: 100%;
     height: auto;
     border-radius: 10px;
     margin-left: 10px;
+}
+.contact-left img:hover {
+    transform: translateY(-5px);
 }
 .contact-right{
     flex: 1; /*para que el form ocupe todo el espacio disponible*/
