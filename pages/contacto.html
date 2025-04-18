@@ -1,0 +1,90 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>¡Viví el Lollapalooza Argentina 2026!</title>
+        <link rel="stylesheet" href="../main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="logo-txt">
+                    <a href="/">Lollapalooza</a>
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="/pages/servicios.html">Servicios</a></li>
+                        <li><a href="/pages/galeria">Galería</a></li>
+                        <li><a href="/pages/contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="contacto">
+            <div class="container">
+                <div class="main-text">Contacto</div>
+                <div class="texto-secundario">¿Querés saber más sobre entradas, horarios o artistas? Completá el formulario y nuestro equipo te va a contactar pronto.</div>
+                <div class="columna">
+                    <div class="contact-left">
+                        <img src="../public/img/contact.png" alt="Imagen del evento musical">
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <div class="form-grupo">
+                                <input type="text" name="Nombre" placeholder="Tu Nombre" required>
+                            </div>
+                            <div class="form-grupo">
+                                <input type="email" name="Email" placeholder="Tu Email" required>
+                            </div>
+                            <div class="form-grupo">
+                                <select name="Consulta" required>
+                                    <option value="" disabled selected>Tipo de Consulta</option> <!-- opcion que no se puede seleccionar   -->
+                                    <option value="entradas">Entradas</option>
+                                    <option value="horarios">Horarios</option>
+                                    <option value="artistas">Artistas</option>
+                                    <option value="otros">Otros</option>
+                                </select>
+                            </div>
+                            <div class="form-grupo">
+                                <textarea name="Mensaje" rows="6" placeholder="Tu Mensaje"></textarea>
+                            </div>
+                            <div class="form-grupo checkbox-grupo">
+                                <label>
+                                    <input type="checkbox" required>
+                                    <span>Acepto los términos y condiciones</span>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="content">
+                    <p>&copy; 2025 Lollapalooza. Todos los derechos reservados.</p>
+                    <div class="logo-txt">
+                        <a href="#header">Lollapalooza</a>
+                    </div>
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com/lollapaloozaar"><img src="../public/img/logotipo-circular-de-facebook.png"" alt="Facebook>"</imgFacebook></a></li>
+                        <li><a href="https://x.com/lollapaloozaar"><img src="../public/img/logotipo-de-X.png" alt="X"></a></li>
+                        <li><a href="https://www.instagram.com/lollapaloozaar/"><img src="../public/img/logotipo-de-instagram.png" alt="Instagram"></a></li>
+                        <li><a href="https://github.com/agustinso0/PROG3-UTN"><img src="../public/img/logotipo-de-github.png" alt="GitHub"></a></li>
+                        <li><a href="https://www.linkedin.com/company/lollapaloozaargentina/"><img src="../public/img/logotipo-de-linkedin.png" alt="LinkedIn"></a></li>
+                    </ul>
+                </div>
+            </div>            
+        </footer>
+        
+    </body>
+</html>

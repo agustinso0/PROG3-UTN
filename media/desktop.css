@@ -1,0 +1,36 @@
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .logo-txt a {
+        font-size: 28px;
+    }
+
+    .navbar ul {
+        gap: 15px;
+    }
+
+    .navbar a {
+        font-size: 17px;
+    }
+
+    #servicios .item {
+        max-width: 45%;
+    }
+
+    footer .content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .logo-txt a {
+        font-size: 28px;
+    }
+}

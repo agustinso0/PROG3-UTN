@@ -1,0 +1,82 @@
+/* Estilos específicos para la página index. Mobile-First */
+#servicios .title {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#servicios .list {
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 0 20px;
+  list-style: none;
+  gap: 20px;
+}
+
+#servicios .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eeeeee;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+#servicios .img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+#servicios .item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#servicios .item h3, 
+#servicios .item h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#servicios .item p {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#servicios .item a {
+  text-decoration: none;
+  color: #4486cd;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#servicios .item a:hover {
+  color: #0056b3;
+}
+
+#servicios .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  text-align: center;
+}

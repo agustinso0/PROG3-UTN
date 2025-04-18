@@ -1,0 +1,46 @@
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Estilos generales para todas las imágenes */
+.galeria-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.galeria-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Tamaños personalizados tipo Bento */
+.galeria-grid img:nth-child(1) {
+    grid-column: span 1;
+}
+
+.galeria-grid img:nth-child(2) {
+    grid-row: span 2;
+}
+
+.galeria-grid img:nth-child(3) {
+    grid-column: span 1;
+}
+
+.galeria-grid img:nth-child(4) {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.galeria-grid img:nth-child(6) {
+    grid-column: span 3;
+}
+
+.galeria-grid img:nth-child(5) {
+    grid-column: span 1;
+}

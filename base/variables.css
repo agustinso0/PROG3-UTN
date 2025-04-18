@@ -1,0 +1,28 @@
+/*Variables globales*/
+
+*{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.main-text {
+    font-size: 3rem;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.secondary-text {
+    font-size: 2rem;
+    color: #777;
+    text-align: center;
+    margin-bottom: 20px;
+}

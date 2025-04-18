@@ -1,0 +1,28 @@
+/*BASE*/
+@import url('base/normalize.css');
+
+@import url('base/typography.css');
+
+@import url('base/variables.css');
+/*Components*/
+@import url('components/header.css');
+
+@import url('components/footer.css');
+
+@import url('components/contact.css');
+/*Media*/
+@import url('media/desktop.css');
+
+@import url('media/mobile.css');
+
+@import url('media/tablet.css');
+/*Pages*/
+@import url('pages/contact.css');
+
+@import url('pages/galery.css');
+
+@import url('pages/index.css');
+
+@import url('pages/services.css');
+
+

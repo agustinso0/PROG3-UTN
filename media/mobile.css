@@ -1,0 +1,57 @@
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo-txt a {
+        font-size: 24px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    #servicios .title {
+        font-size: 2rem;
+    }
+
+    #servicios .item h2, 
+    #servicios .item h3 {
+        font-size: 1.2rem;
+    }
+
+    #servicios .item p {
+        font-size: 0.9rem;
+    }
+
+    footer .container {
+        padding: 10px;
+    }
+
+    footer .content {
+        align-items: flex-start;
+    }
+
+    .logo-txt a {
+        font-size: 24px;
+    }
+
+    footer .social-media {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    footer .social-media li a {
+        font-size: 16px;
+    }
+}
