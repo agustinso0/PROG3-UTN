@@ -1,3 +1,12 @@
+body{
+    background-color: #FFF7ED;
+}
+header .container{
+    background-color: #FB7185;
+}
+footer .container{
+    background-color: #FB7185;
+}
 #contacto{
     padding: 80px 0;
 }
@@ -63,9 +72,10 @@ form .btn{
     cursor: pointer;
     border-radius: 8px;
     transition: background-color 0.3s, transform 0.3s; /*efecto btn*/
+    background-color: #FF6B6B;
 }
 form .btn:hover{ /*efecto btn*/
-    background-color: #333;
+    background-color: #FF5252;
     color: #fff;
     transform: scale(1.03);
 }
