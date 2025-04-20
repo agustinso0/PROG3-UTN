@@ -26,3 +26,11 @@
     text-align: center;
     margin-bottom: 20px;
 }
+
+:root{
+    --color-header: #FB7185;
+    --color-footer: #FB7185;
+    --color-fondo:  #FFF7ED;
+    --color-tarjetas: #FECDD3;
+}
+

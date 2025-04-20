@@ -1,11 +1,11 @@
 body{
-    background-color: #FFF7ED;
+    background-color: var(--color-fondo);
 }
 header .container{
-    background-color: #FB7185;
+    background-color: var(--color-header)
 }
 footer .container{
-    background-color: #FB7185;
+    background-color: var(--color-footer);
 }
 #contacto{
     padding: 80px 0;
