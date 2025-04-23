@@ -6,6 +6,13 @@
     margin-top: 40px;
 }
 
+.galeria-tittle {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
 /* Estilos generales para todas las imágenes */
 .galeria-grid img {
     width: 100%;
@@ -44,3 +51,4 @@
 .galeria-grid img:nth-child(5) {
     grid-column: span 1;
 }
+

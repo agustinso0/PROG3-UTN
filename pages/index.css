@@ -92,6 +92,14 @@
     margin: 0 auto;
     font-size: 1.2rem;
     color: #333;
+    margin-bottom: 20px;
+}
+
+.fest-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
 /* EXPERIENCIAS */
