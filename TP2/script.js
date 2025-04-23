@@ -11,7 +11,7 @@ for (let i = 0; i<todosLosLi.length; i++){
     todosLosLi[i].textContent += " Texto agregado" //agregar texto al que tiene
 }*/
 
-//ej2
+/*ej2
 document.querySelector("button").addEventListener("click", function () {
     let input = document.querySelector("input");// captura el valor del input
     let inputValue = input.value;
@@ -28,3 +28,22 @@ document.querySelector("button").addEventListener("click", function () {
         document.querySelector("ul").appendChild(nuevoLi);// agrega el li a la lista
     }
 });
+*/
+
+//ej3
+const botonResaltar = document.querySelector(".resaltar");
+botonResaltar.addEventListener('click', function(){
+    const parrafos = document.getElementsByClassName("parrafo");
+    for (let i = 0; i< parrafos.length; i++){
+        parrafos[i].classList.add("resaltado")
+    }
+}
+);
+const botonOcultar = document.querySelector(".ocultar");
+botonOcultar.addEventListener('click', function(){
+    const parrafos = document.getElementsByClassName("parrafo");
+    for (let i = 0; i< parrafos.length; i++){
+        parrafos[i].classList.add("oculto")
+    }
+}
+);
