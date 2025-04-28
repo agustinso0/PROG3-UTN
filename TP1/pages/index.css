@@ -7,6 +7,34 @@
     position: relative;
 }
 
+.hero .cont {
+    position: relative;
+    z-index: 1;
+}
+
+.hero .content {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.hero .content img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.hero .content img:hover{
+    transform: scale(1.05);
+}
+
 .hero::before {
     content: '';
     background-color: rgba(0, 0, 0, 0.5); 
@@ -64,6 +92,14 @@
     margin: 0 auto;
     font-size: 1.2rem;
     color: #333;
+    margin-bottom: 20px;
+}
+
+.fest-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
 /* EXPERIENCIAS */
@@ -99,8 +135,9 @@
 }
 
 .grid-experiencias img {
-    width: 60px;
+    width: 240px;
     margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 .grid-experiencias h3 {
