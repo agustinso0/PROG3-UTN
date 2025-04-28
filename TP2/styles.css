@@ -5,3 +5,11 @@
 .oculto{
     display: none;
 }
+
+/* estilo para agregar background green y text color white cuando el estado es completado */
+
+.completado{
+    background-color: green;
+    color: white;
+}
+

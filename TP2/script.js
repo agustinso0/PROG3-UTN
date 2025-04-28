@@ -30,20 +30,64 @@ document.querySelector("button").addEventListener("click", function () {
 });
 */
 
-//ej3
-const botonResaltar = document.querySelector(".resaltar");
-botonResaltar.addEventListener('click', function(){
-    const parrafos = document.getElementsByClassName("parrafo");
-    for (let i = 0; i< parrafos.length; i++){
-        parrafos[i].classList.add("resaltado")
-    }
-}
-);
-const botonOcultar = document.querySelector(".ocultar");
-botonOcultar.addEventListener('click', function(){
-    const parrafos = document.getElementsByClassName("parrafo");
-    for (let i = 0; i< parrafos.length; i++){
-        parrafos[i].classList.add("oculto")
-    }
-}
-);
+// //ej3
+// const botonResaltar = document.querySelector(".resaltar");
+// botonResaltar.addEventListener('click', function(){
+//     const parrafos = document.getElementsByClassName("parrafo");
+//     for (let i = 0; i< parrafos.length; i++){
+//         parrafos[i].classList.add("resaltado")
+//     }
+// }
+// );
+// const botonOcultar = document.querySelector(".ocultar");
+// botonOcultar.addEventListener('click', function(){
+//     const parrafos = document.getElementsByClassName("parrafo");
+//     for (let i = 0; i< parrafos.length; i++){
+//         parrafos[i].classList.add("oculto")
+//     }
+// }
+// );
+
+
+//ej4
+
+const form = document.getElementById('tareas-form');
+        const tareaInput = document.getElementById('tareaInput');
+        const tareaList = document.getElementById('tareaList');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const nuevaTareaText = tareaInput.value.trim();
+            if (nuevaTareaText !== '') {
+                const nuevoItem = document.createElement('li');
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.className = 'tarea-checkbox';
+
+                
+                checkbox.addEventListener('change', function() {
+                    if (this.checked) {
+                        nuevoItem.classList.add('completado');
+                    } else {
+                        nuevoItem.classList.remove('completado');
+                    }
+                });
+
+                nuevoItem.appendChild(checkbox);
+                nuevoItem.appendChild(document.createTextNode(nuevaTareaText));
+                tareaList.appendChild(nuevoItem);
+                tareaInput.value = '';
+            }
+        });
+
+        
+        document.querySelectorAll('.tarea-checkbox').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                if (this.checked) {
+                    this.parentElement.classList.add('completado');
+                } else {
+                    this.parentElement.classList.remove('completado');
+                }
+            });
+        });
