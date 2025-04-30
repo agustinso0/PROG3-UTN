@@ -94,7 +94,8 @@ document.querySelectorAll('.tarea-checkbox').forEach(checkbox => {
 
 //ej5
 let form5 = document.getElementById("formulario-5");
-form5.addEventListener("submit", function (e) {
+const btn5 = document.getElementById("boton-5");
+btn5.addEventListener("click", function (e) {
     e.preventDefault();
 
     const nombre = document.getElementById("nombre-5").value.trim();
