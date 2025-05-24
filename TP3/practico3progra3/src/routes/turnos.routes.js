@@ -4,7 +4,8 @@ const express = require('express');
 const router = express.Router();
 const turnosController = require('../controllers/API/turnos.controller');
 
-// GET /api/v1/turnos/:idPaciente
-router.get('/:idPaciente', turnosController.obtenerTurnosPorPaciente);
+
+router.get('/:idPaciente', turnosController.get);
+router.delete('/:idTurno', turnosController.delete);
 
 module.exports = router;

@@ -1,25 +1,24 @@
 const fs = require('fs');
 const path = require('path');
 
-const turnosPath = path.join(__dirname, '../../../data/turnos.json');
+const turnosModel = require('../../models/mock/turnos.models.js');
 
-exports.obtenerTurnosPorPaciente = (req, res) => {
-    const { idPaciente } = req.params;
+class TurnosController {
+    get(req, res) {
+        const { idPaciente } = req.params;
+        const turnosPaciente = turnosModel.listByPaciente(idPaciente);
+        res.status(200).json(turnosPaciente);
+    }
 
-    // leer archivo json turnos
-    fs.readFile(turnosPath, 'utf8', (err, data) => {
-        if (err) {
-            return res.status(404).json({ error:'No se pudo leer el archivo de turnos'});
+    delete(req, res) {
+        const { idTurno } = req.params;
+        const eliminado = turnosModel.delete(idTurno);
+        if (eliminado) {
+            res.status(200).json({ message: "Turno cancelado correctamente." });
+        } else {
+            res.status(404).json({ error: "Turno no encontrado." });
         }
-        let turnos = [];
-        try {
-            turnos = JSON.parse(data);
-        } catch (parseErr) {
-            return res.status(404).json({ error:'Error al parsar los turnos'});
-        }
+    }
+}
 
-        //filtrar turnos por idPaciente
-        const turnosPaciente = turnos.filter(t => String(t.idPaciente) === String(idPaciente));
-        res.json(turnosPaciente);
-    });
-};
+module.exports = new TurnosController();
