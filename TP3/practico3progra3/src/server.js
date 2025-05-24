@@ -1,6 +1,7 @@
 const  express = require('express');
 const  dotenv = require('dotenv');
 const rutaPacientes = require('./routes/pacientes.route.js')
+const turnosRoutes = require('./routes/turnos.routes.js');
 const home = require('./routes/home.routes.js');
 const morgan = require('morgan');
 dotenv.config()
@@ -42,6 +43,8 @@ class Server {
   rutas () {
     this.app.use('/api/v1/pacientes', rutaPacientes)
     this.app.use('/',home)
+    this.app.use('/api/v1/turnos', turnosRoutes) // ruta para consultar los turnos
+
  
     // aca van las otras rutas
 
