@@ -2,10 +2,11 @@
 
 const express = require('express');
 const router = express.Router();
-const turnosController = require('../controllers/API/turnos.controller');
+const TurnosController = require('../controllers/API/turnos.controller');
 
 
-router.get('/:idPaciente', turnosController.get);
-router.delete('/:idTurno', turnosController.delete);
+router.get('/:idPaciente', TurnosController.obtenerPorID);
+router.get('/', TurnosController.obtenerTurnos);
+router.delete('/:idTurno', TurnosController.delete);
 
 module.exports = router;
