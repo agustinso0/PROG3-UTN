@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const TurnosController = require("../controllers/API/turnos.controller");
-const { validarParametroID } = require("../middleware/validate");
+const { validarParametroID } = require("../middlewares/validate");
 
 router.get("/ver", TurnosController.renderizarTurnos);
 router.get(
