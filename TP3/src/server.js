@@ -5,7 +5,7 @@ const rutaPacientes = require("./routes/pacientes.route.js");
 const rutaTurnos = require("./routes/turnos.routes.js");
 const index = require("./routes/index.routes.js");
 const morgan = require("morgan");
-const methodOverride = require('method-override');
+const methodOverride = require("method-override");
 
 dotenv.config();
 
@@ -36,8 +36,9 @@ class Server {
   middleware() {
     this.app.use("/", express.static("public"));
     this.app.use(express.json());
+    this.app.use(express.urlencoded({ extended: true }));
     this.app.use(morgan("dev"));
-    this.app.use(methodOverride('_method'));
+    this.app.use(methodOverride("_method"));
   }
 
   routes() {
