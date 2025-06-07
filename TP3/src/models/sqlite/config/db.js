@@ -4,7 +4,7 @@ const path = require("path");
 const sequelize = new Sequelize({
   dialect: "sqlite",
   storage: path.join(__dirname, "db", "clinica.sqlite"),
-  logging: true,
+  logging: false,
 });
 
 /* require("../../sqlite/entities/paciente.entity");
