@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "id_paciente": 1,
+    "date": "2025-06-10T10:00:00",
+    "motivo": "Consulta general"
+  },
+  {
+    "id": 2,
+    "id_paciente": 2,
+    "date": "2025-06-11T14:30:00",
+    "motivo": "Dolor de cabeza persistente"
+  },
+  {
+    "id": 3,
+    "id_paciente": 3,
+    "date": "2025-06-12T09:15:00",
+    "motivo": "Control post-operatorio"
+  },
+  {
+    "id": 4,
+    "id_paciente": 4,
+    "date": "2025-06-13T11:45:00",
+    "motivo": "Chequeo anual"
+  },
+  {
+    "id": 5,
+    "id_paciente": 5,
+    "date": "2025-06-14T16:00:00",
+    "motivo": "Análisis de sangre"
+  },
+  {
+    "id": 6,
+    "id_paciente": 1,
+    "date": "2025-06-20T10:00:00",
+    "motivo": "Seguimiento de tratamiento"
+  }
+]

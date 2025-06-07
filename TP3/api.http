@@ -1,0 +1,8 @@
+### RECUPERAR TODOS LOS TURNOS (REST CLIENT extension)
+GET http://localhost:3001/api/v1/turnos
+
+### RECUPERAR UN TURNO POR ID
+GET http://localhost:3001/api/v1/turnos/{id}
+
+### ELIMINAR UN TURNO POR ID
+DELETE http://localhost:3001/api/v1/turnos/{id}

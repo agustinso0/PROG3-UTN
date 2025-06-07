@@ -1,0 +1,23 @@
+<!-- Nuevo archivo: src/views/ejs/pacientes.ejs -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Pacientes</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Pacientes</h1>
+    <ul>
+        <% pacientes.forEach(function(p) { %>
+            <li>
+                <%= p.nombre %> <%= p.apellido %> (<%= p.email %>)
+                <form method="POST" action="/api/v1/pacientes/<%= p.id %>?_method=DELETE" style="display:inline;">
+                    <button type="submit">Eliminar</button>
+                </form>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
+

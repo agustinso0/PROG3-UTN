@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Turnos</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Turnos</h1>
+    <h2>Lista de Turnos</h2>
+
+    <h3>Registrar nuevo turno</h3>
+    <form method="POST" action="/api/v1/turnos">
+        <label>Paciente (ID): <input type="number" name="id_paciente" required></label><br>
+        <label>Fecha y hora: <input type="datetime-local" name="date" required></label><br>
+        <label>Motivo: <input type="text" name="motivo" required></label><br>
+        <button type="submit">Registrar</button>
+    </form>
+
+    <% if (turnos && turnos.length > 0) { %>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Paciente</th>
+                    <th>Motivo</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+            <% turnos.forEach(function(turno) { %>
+                <tr>
+                    <td><%= turno.fecha %></td>
+                    <td><%= turno.hora %></td>
+                    <td><%= turno.paciente %></td>
+                    <td><%= turno.motivo %></td>
+                    <td>
+                        <form method="POST" action="/api/v1/turnos/<%= turno.id %>?_method=DELETE">
+                            <button type="submit">Cancelar</button>
+                        </form>
+                    </td>
+                </tr>
+            <% }); %>
+            </tbody>
+        </table>
+    <% } else { %>
+        <p>No hay turnos disponibles.</p>
+    <% } %>
+
+    <footer>
+        <p>© <%= new Date().getFullYear() %> Mi Aplicación</p>
+    </footer>
+</body>
+</html>
