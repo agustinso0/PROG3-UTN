@@ -53,7 +53,7 @@ async function poblarPacientes() {
     { ignoreDuplicates: true }
   );
 
-  console.log("Pacientes cargados");
+  console.log("Datos cargados");
 }
 
 poblarPacientes();
