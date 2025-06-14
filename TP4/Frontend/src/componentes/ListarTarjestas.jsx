@@ -1,9 +1,9 @@
-import React from 'react'
 import TarjetaPersona from './TarjetaPersona'
+import './TarjetaPersona.css'
 
 const ListarTarjetas = ({personas}) => {
     return (
-        <div style={{display: 'flex', flexWrap: 'wrap', gap:'1rem'}}>
+        <div className= 'disposicionTarjetas'>
             {personas.map (persona =>(
                 <TarjetaPersona key={persona.id} persona={persona} />
             ))}
