@@ -23,7 +23,7 @@ const TraerPersonas = () => {
 
     return (
         <div>
-            <h1>Lista de Personas</h1>
+            <h1>Lista de Personas TP4</h1>
             <ListarTarjetas personas = {personas}/>
         </div>
     )
